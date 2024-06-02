@@ -25,7 +25,7 @@ services:
 
   # image with major
   mongodb:
-    image: mongo:4@sha256:e102bde93f3a876642d91d6dfcc2902308335cb7414b74b116e0692a8622c7b3 # editorconfig-checker-disable-line
+    image: mongo:4@sha256:52c42cbab240b3c5b1748582cc13ef46d521ddacae002bbbda645cebed270ec0 # editorconfig-checker-disable-line
     user: "{{ ansible_manager_user_uid }}:{{ ansible_manager_user_gid }}"
     environment:
       TZ: "{{ timezone }}"
@@ -35,7 +35,7 @@ services:
 
   # image with latest
   docker-socket-proxy:
-    image: ghcr.io/tecnativa/docker-socket-proxy:latest@sha256:6c22b9545adc95258af9deffdde6c0ce0a0a70716771e5a4e02d24d1b6e0dda1 # editorconfig-checker-disable-line
+    image: ghcr.io/tecnativa/docker-socket-proxy:latest@sha256:dc8ec925b1360c54e6bf350602d6faac4e33c5d8d809118e4c000c0b14a4529a # editorconfig-checker-disable-line
     environment:
       CONTAINERS: 1
     volumes:
@@ -46,7 +46,7 @@ services:
 
   # image with docker digest update (1/3)
   plex:
-    image: lscr.io/linuxserver/plex:1.32.8@sha256:8e038b79487919c2aefe976b690067df88113aec21a3d490837584f958c72412 # editorconfig-checker-disable-line
+    image: lscr.io/linuxserver/plex:1.32.8@sha256:e495036368c2540e84ce8015209b6ee2fe9dc88f66849c9ffcc1dffb182ac8d7 # editorconfig-checker-disable-line
     environment:
       TZ: "{{ timezone }}"
 
@@ -72,7 +72,7 @@ services:
 
   # image with docker digest update (2/3)
   qbittorrent:
-    image: lscr.io/linuxserver/qbittorrent:4.6.2@sha256:9a1e2c2925b85230bde4a0b450ef132e9c97ede934fb5a13d33eddf8599090e2 # editorconfig-checker-disable-line
+    image: lscr.io/linuxserver/qbittorrent:4.6.2@sha256:ef49e9a76faa73c5a594e2dbd89b5a7a3503abe53bcde5277f999f869658cdf6 # editorconfig-checker-disable-line
     environment:
       TZ: "{{ timezone }}"
 
